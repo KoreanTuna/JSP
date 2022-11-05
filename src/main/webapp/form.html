@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="form_ok.jsp" method="post">
+    <form action="form_ok.php" method="post">
+        <fieldset id="private_field">
+            <legend>아이디 정보 입력</legend>
+            <label for="email">이메일 :</label><br>
+            <input type="text" id="email" name ="email" placeholder="이메일을 입력하세요..." required><br><br>
+
+            <label for="pwd">비밀번호 :</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="비밀번호를 입력하세요..." required><br><br>
+        </fieldset>
+        <label for="uname">이름 :</label><br>
+        <input type="text" id="uname" name="uname" placeholder="이름을 입력하세요..."><br><br>
+
+        <label for="major1">전공 : </label><br>
+        <input type ="radio" id="major1" name ="major" value="컴퓨터공학"> 컴퓨터공학
+        <input type ="radio" id="major2" name ="major" value="경영/경제"> 경영경제
+        <input type ="radio" id="major3" name ="major" value="콘텐츠융합디자인"> 콘텐츠융합디자인
+        <br><br>
+        <input type="checkbox" id="skill1" name="skill" value="1">JAVA
+        <input type="checkbox" id="skill2" name="skill" value="2">React
+        <input type="checkbox" id="skill3" name="skill" value="3">Flutter
+        <input type="checkbox" id="skill4" name="skill" value="4">Unity
+        <input type="checkbox" id="skill5" name="skill" value="5">Unreal
+        <input type="checkbox" id="skill6" name="skill" value="6">Kotlin
+        <input type="checkbox" id="skill7" name="skill" value="7">Swift
+        <br><br>
+
+        <select name="graduate">
+            <optgroup label="봄학기">
+                <option value="1" selected>2022</option>
+                <option value="2">2023</option>
+                <option value="3">2024</option>
+                <option value="4">2025</option>
+                <option value="5">2026</option>
+                <option value="6">2027</option>
+            </optgroup>
+            <optgroup label="가을학기">
+                <option value="1" selected>2022</option>
+                <option value="2">2023</option>
+                <option value="3">2024</option>
+                <option value="4">2025</option>
+                <option value="5">2026</option>
+                <option value="6">2027</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label for="team_professor">팀 교수님 :</label><br>
+        <input type="text" id="team_professor" name ="team_professor" placeholder="팀 교수님 성함을 입력해주세요..."><br><br>
+
+        <label for="birthday">생일 :</label>
+        <input id ="birthday" type="date" min="1900-01-01" max="2022-10-14" name="birthday">
+        <br><br>
+
+        <label for="dom">기숙사 :</label>
+        <input list="dom" id="dom_choice" name="dom_choice">
+        <datalist id="dom">
+            <option value="벧엘관">
+            <option value="로뎀관">
+            <option value="로뎀관">
+            <option value="창조관">
+            <option value="카이퍼">
+            <option value="로뎀관">
+            <option value="국제관">
+        </datalist>
+        <br><br>
+
+        <label for="target">목표 :</label>
+        <input list="target" id="target_choice" name="target_choice">
+        <datalist id="target">
+            <option value="진학">
+            <option value="취업">
+            <option value="공부">
+            <option value="연수">
+        </datalist>
+        <br><br>
+
+        <label for="introduce">자기소개 :</label><br>
+        <textarea id ="introduce" name="introduce" cols="50" rows="5">
+        </textarea>
+
+        <br><br>
+        <input type="submit" value="저장">
+        <input type="reset"value="새로입력">
+    </form>
+</form>
+</body>
+</html>
